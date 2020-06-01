@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.mainViewArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.forecast {
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding-left: 1.5rem;
+}
+
+.app {
+    &__content {
+        padding: 0 1.5em;
+    }
+    &__day_night_content {
+        margin-top: 1rem;
+        padding: 0 1.5em;
+        display: flex;
+        justify-content: space-between;
+
+        &__gauges {
+            flex: 0 0 49%;
+            display: flex;
+            justify-content: space-around;
+        }
+        & > :nth-child(2) {
+            flex: 0 0 51%;
+        }
+    }
+}

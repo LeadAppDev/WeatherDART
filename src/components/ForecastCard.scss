@@ -1,0 +1,60 @@
+.forecastCard {
+    box-shadow: 0 6px 18px #5c6bc028;
+    border-radius: 20px;
+    min-width: 210px;
+    max-width: 210px;
+    margin-right: .75rem;
+    margin-left: .75rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    &:nth-child(1) {
+        margin-left: 0;
+    }
+    &__header {
+        padding-top: .5rem;
+        text-align: center;
+    }
+    &__summary {
+        text-align: center;
+        padding: 0 .5rem;
+        height: 2rem;
+    }
+    &__icon-content {
+        align-items: center;
+        display: flex;
+        height: 75px;
+        justify-content: center;
+        &__icon {
+            background: #ffffff;
+            height: 50px;
+            width: 50px;
+        }
+    }
+    &__weather-stats {
+        display: flex;
+        padding:  1rem 0.5rem;
+        &__desc-name {
+            flex: 0 0 50%;
+            text-align: left;
+            & > * {
+                border-bottom: solid #b3bfc5 1px;
+            }
+        }
+        &__desc-result {
+            flex: 0 0 50%;
+            text-align: right;
+            & > * {
+                border-bottom: solid #e7e7e7 1px;
+            }
+        }
+    }
+}
+
+.placeholder {
+    height: 320px;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    background: #f7f7f7;
+}

@@ -1,0 +1,44 @@
+.mapViewContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    flex: 0 0 60%;
+
+    &__placeholder {
+        background: #f7f7f7;
+        display: flex;
+        height: 500px;
+        width: 100%;
+        flex: 0 0 60%;
+    }
+
+    & .mapCardView {
+        height: 410px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
+        &__header {
+            align-items: center;
+            background: #42a5f5;
+            display: flex;
+            height: fit-content;
+            justify-content: center;
+            width: 100%;
+            color: #ffffff;
+            padding: 4px 0;
+        }
+        &__map {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &__controls {
+        align-items: center;
+        background: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
+        display: flex;
+        height: 50px;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
